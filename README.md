@@ -69,6 +69,8 @@ Playbook for setting up the Nagios monitoring server and clients (CentOS/Rocky/R
 git clone https://github.com/sadsfae/ansible-nagios
 cd ansible-nagios
 sed -i 's/host-01/yournagioshost/' hosts
+or 
+sed -i '' ' s/host-01/IP-server/'  hosts
 ```
    - Add any hosts for checks in the ```hosts``` inventory
    - The same host can only belong to **one** host inventory category

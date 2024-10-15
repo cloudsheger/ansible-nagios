@@ -4,7 +4,8 @@
 ## Ansible user
 # change this if running Ansible as a non-root user
 # would require sudo, e.g. AWS EC2 uses ec-user
-ansible_system_user: root
+#ansible_system_user: root
+ansible_system_user: ec2-user
 
 ### Firewall management ###
 # Set to true to deploy firewall rules for nagios server
@@ -23,7 +24,7 @@ nagios_http_port: 80
 nagios_https_port: 443
 admin_name_01: nagiosadmin
 # change this to your email address if you want notifications
-admin_email_01: nagios@localhost
+admin_email_01: jemalmoh.cloud@gmail.com
 # set to false if you don't want to monitor swap
 # on your nagios server
 nagios_host_monitor_swap: true
